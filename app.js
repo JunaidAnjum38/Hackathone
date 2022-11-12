@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc ,doc ,getDocs,query } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyC7NHpm7fJp9WUTNrIVV2H6tp_hsyeTBBw",
@@ -50,7 +50,7 @@ const ok = async () => {
     let Course = document.getElementById("course");
 
     try {
-        const docRef = await addDoc(collection(db, "student1"), {
+        const docRef = await addDoc(collection(db, "student"), {
             Name: Name.value,
             F_name: F_name.value,
             Roll: Roll.value,
