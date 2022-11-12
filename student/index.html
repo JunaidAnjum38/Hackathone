@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Form</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub_main">
+            <div class="image">
+                <img class="logo" src="../assest/saylani logo.png" />
+            </div>
+            <h2 style="text-align: center; margin: 20px 0px;" >Student Information</h2>
+            <div class="login-card">
+                <label class="inp">Name:
+                    <input class="input" type="name" placeholder="Enter Name" name="" id="name">
+                </label>
+                <label class="inp">F.Name:
+                    <input class="input" type="text" placeholder="Father Name" name="" id="f_name">
+                </label>
+                <label class="inp">Roll Number:
+                    <input class="input" type="text" name="" id="rollnum">
+                </label class="inp">
+                <label class="inp">Email:
+                    <input class="input" type="email" name="" id="email" placeholder="Enter Email">
+                </label>
+                <label class="inp">Contact No:
+                    <input class="input" type="number" name="" id="phoneNO">
+                </label>
+                <label class="inp">CNIC:
+                    <input class="input" type="number" placeholder="Enter CNIC" name="" id="cnic">
+                </label>
+                <label class="inp" for="img">Select image:
+                <input type="file" id="getimg" name="img" accept="image/*"></label>
+                <label class="inp">Course:
+                    <select id="course">
+                        <option>-Select-</option>
+                        <option>Web & Moblie Application</option>
+                        <option>Artificail Intelligence</option>
+                        <option>Ui Designer</option>
+                        <option>Graphic Designer</option>
+                    </select>
+                </label>
+                <button class="login" id="btnsub">submit</button>
+            </div>
+        </div>
+        <script type="module" src="../app.js"></script>
+</body>
+
+</html>
